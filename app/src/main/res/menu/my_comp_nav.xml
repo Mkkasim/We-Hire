@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="EXPLORE">
+        <menu>
+            <item
+                android:id="@+id/nav_post_ji"
+                android:icon="@drawable/internship"
+                android:iconTint="@color/darkGreen"
+                android:title="Post Jobs &amp; Internships"/>
+            <item
+                android:id="@+id/nav_post_trainings"
+                android:icon="@drawable/training"
+                android:iconTint="@color/darkGreen"
+                android:title="Post Trainings"/>
+            <item
+                android:id="@+id/nav_jobs"
+                android:icon="@drawable/job"
+                android:iconTint="@color/darkGreen"
+                android:title="Jobs"/>
+
+        </menu>
+    </item>
+
+
+    <item android:title="HELP &amp; SUPPORT">
+        <menu>
+            <item
+                android:id="@+id/nav_helpcenter"
+                android:icon="@drawable/helpcenter"
+                android:title="Help Center"/>
+            <item
+                android:id="@+id/nav_report"
+                android:icon="@drawable/report"
+                android:title="Report a Complaint"/>
+            <item
+                android:id="@+id/nav_more"
+                android:icon="@drawable/more"
+                android:title="More"/>
+        </menu>
+    </item>
+
+
+</menu>

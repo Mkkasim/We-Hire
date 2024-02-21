@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">WeHire</string>
+
+
+    <string name="preferencehead">We will show you relevent opportunities in search results &amp; send you interships/jobs alerts based on your preferences.</string>
+    <string name="facingissue">Facing an issue with an employer? Report suspicious behaviour</string>
+    <string name="facing_des">Let us know if an employer has: \n\n- Asked for money in the form of security deposit,laptop fee, etc. \n\n- Made offensive comments. \n\n- Posted incorrect job description or stipend/salary. \n\n- Refused to issue an internship certificate or pay the promised stipend. \n\n- Tried to get social media followers, app downloads or any other free work done, under the guise of assessment.</string>
+    <string name="resume_Des">Whenever you apply to an internship/job, this  is the resume that the employer will see. Always make sure it is upto date.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="noApplications">You have not applied any internships/jobs till now please apply before its fills out.</string>
+    <string name="noPost">You have not posted any internships/jobs till now please post to see details.</string>
+    <string name="noNotification">You have not done activity till now so, there is no notification available right now.</string>
+    <string name="appliedStatus">Your application has been shared with the employer who may get in touch if they like it.\nMeanwhile,apply to more internship to improve your chances.</string>
+    <string name="Hired">Congratulations! Your application has been selected pack your gadjets to work</string>
+    <string name="Rejected">We are sorry you did not make it. We suggest you apply to more internships to improve your chances.</string>
+    <string name="postedStatus">Your Internship/Job has been shared with the interns who may apply if they like it.\nMeanwhile, You can post if any other intership/job avaible in your company</string>
+</resources>

@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Company.fragments.PostJobsInternshipFragment">
+
+    <TextView
+        android:id="@+id/jobType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Type"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="75dp"
+        android:elevation="4dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/job_type_shape"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:id="@+id/MyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Post Jobs &amp; Internships"
+                android:textSize="24sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/darkGreen"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/poppins_bold" />
+
+            <TextView
+                android:id="@+id/des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/MyName"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Note : Don't post any jobs and internships which is fraud or else you account will be rejected."
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/CompanyName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/des">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/CompanyNameEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/darkGreen"
+                    android:hint="Comany Name"
+                    android:textColor="@color/darkGreen"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/JobRole"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/CompanyName">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/JobRoleEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/darkGreen"
+                    android:hint="Job/ Internship Title"
+                    android:textColor="@color/darkGreen"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/JobDes"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/JobRole"
+                app:helperText="Describe the Roles And Responsibilities. Atleast 50 chars">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/JobDesEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:backgroundTint="@color/darkGreen"
+                    android:hint="Job/ Internship Description"
+                    android:textColor="@color/darkGreen"
+                    android:imeOptions="actionNext"
+                    android:inputType="textMultiLine" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/AboutComapany"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/JobDes">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/AboutComapanyEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:backgroundTint="@color/darkGreen"
+                    android:hint="Company short bio"
+                    android:textColor="@color/darkGreen"
+                    android:imeOptions="actionNext"
+                    android:inputType="textMultiLine" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/companyWeb"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/AboutComapany">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/companyWebEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/darkGreen"
+                    android:hint="Company Website"
+                    android:textColor="@color/darkGreen"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/RequiredSkills"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/companyWeb">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/requiredSkillsEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:backgroundTint="@color/darkGreen"
+                    android:hint="Required Skills"
+                    android:textColor="@color/darkGreen"
+                    android:imeOptions="actionNext"
+                    android:inputType="textMultiLine" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/PerkText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RequiredSkills"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Select Perks"
+                android:textColor="@color/darkGreen"
+                android:textSize="16sp" />
+
+
+            <LinearLayout
+                android:id="@+id/Perks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/PerkText"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/edt_round_shape"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipgrp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipCertificate"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:chipStartPadding="10dp"
+                        app:chipEndPadding="10dp"
+                        android:text="Certificate" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipLofRec"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:chipStartPadding="10dp"
+                        app:chipEndPadding="10dp"
+                        android:text="Letter of recommendation" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipFlexibleWH"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:chipStartPadding="10dp"
+                        app:chipEndPadding="10dp"
+                        android:text="Flexible work hours" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipDaysWeek"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:chipStartPadding="10dp"
+                        app:chipEndPadding="10dp"
+                        android:text="5 Days a week" />
+
+                </com.google.android.material.chip.ChipGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/Perks">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/OpeningSpinner"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:hint="Openings">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/openingList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/SalarySpinner"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:hint="Salary">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/salaryList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line2"
+                android:layout_below="@id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/MonthsSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                    android:layout_weight="1"
+                    android:hint="Months"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/monthsList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/jobOrInternship"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                    android:layout_weight="1"
+                    android:hint="Type"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/jobInternList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/partFullTime"
+                android:layout_below="@id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:hint="Part Or Full Time"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/partFullList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/formLink"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/partFullTime">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/formLinkEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/darkGreen"
+                    android:hint="Apply Link"
+                    android:textColor="@color/darkGreen"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/JobLocation"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/formLink"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/JobLocationEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/darkGreen"
+                    android:hint="Location"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textColor="@color/darkGreen" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/JobLocation"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/wfh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Work From Home"
+                    android:textColor="@color/darkGreen"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/wfhSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp" />
+            </RelativeLayout>
+
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/PostBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Post"
+                app:backgroundTint="@color/darkGreen"
+                android:textAllCaps="false"
+                android:layout_below="@id/line3" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

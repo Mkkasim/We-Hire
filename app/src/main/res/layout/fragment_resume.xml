@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.fragments.ResumeFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/relate1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fraud_shape"
+        android:padding="10dp"
+        android:layout_margin="20dp">
+
+
+
+        <TextView
+            android:id="@+id/facingIssueHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/resume_Des"
+            android:textColor="@color/brown"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/liteGrey"
+        android:layout_below="@id/relate1"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/relatePersonal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/personaltxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PERSONAL DETAILS"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:textSize="12sp"
+            android:textColor="@color/green"/>
+
+        <TextView
+            android:id="@+id/Nametxt"
+            android:layout_below="@id/personaltxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Full Name "
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/darkGreen"/>
+
+        <TextView
+            android:id="@+id/emailtxt"
+            android:layout_below="@id/Nametxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserEmail@gmail.com"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:textSize="12sp"
+            android:textColor="@color/darkGrey"/>
+
+        <TextView
+            android:id="@+id/mobiletxt"
+            android:layout_below="@id/emailtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7678094573"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginStart="10dp"
+            android:textSize="12sp"
+            android:textColor="@color/darkGrey"/>
+
+        <TextView
+            android:id="@+id/locattxt"
+            android:layout_below="@id/mobiletxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mumbai"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginStart="10dp"
+            android:textSize="12sp"
+            android:textColor="@color/darkGrey"/>
+
+        <ImageView
+            android:id="@+id/editImg"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/edit" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/liteGrey"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/relatePersonal"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/relateEducation"
+        android:layout_below="@id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/educationtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDUCATIONS"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:textSize="12sp"
+            android:textColor="@color/green"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycEducation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/educationtxt"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            tools:itemCount="2"
+            tools:listitem="@layout/items_education"/>
+
+        <ImageView
+            android:id="@+id/addImg"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/recycEducation"
+            android:background="@drawable/add"
+            android:backgroundTint="@color/green"/>
+
+        <TextView
+            android:id="@+id/addEducation"
+            android:layout_below="@id/recycEducation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add education"
+            android:layout_toEndOf="@id/addImg"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:textSize="12sp"
+            android:textColor="@color/green"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/liteGrey"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/relateEducation"
+        android:orientation="horizontal" />
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+    <TextView
+        android:id="@+id/we_hire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lottie_hire"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="We Hire !"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/darkGreen"
+        android:textSize="20sp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_hire"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/hire_search_anim"
+        app:lottie_loop="true"
+        android:layout_centerInParent="true"/>
+
+
+    <TextView
+        android:id="@+id/we_hire_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="We Hire! Search Jobs &amp; \nInterships In One PlatForm."
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/darkGreen"
+        android:textSize="16sp"/>
+
+</RelativeLayout>
+</layout>

@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".User.fragments.internships.InternDetailsFragment">
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/relateToolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:paddingBottom="5dp"-->
+<!--        app:elevation="8dp">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/backBtn"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:padding="5dp"-->
+<!--            android:src="@drawable/back" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_toEndOf="@+id/backBtn"-->
+<!--            android:fontFamily="@font/poppins_bold"-->
+<!--            android:text="Intership Details"-->
+<!--            android:textColor="@color/darkGreen"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/chatBtn"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:padding="5dp"-->
+<!--            android:src="@drawable/chat" />-->
+<!--    </RelativeLayout>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/relateShortDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/CourseName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Course Name"
+                android:textColor="@color/darkGreen"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/CompanyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CourseName"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Company Name"
+                android:textColor="@color/darkGrey"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/CompanyImg"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/WorkLocationImg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/CompanyName"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/location"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/WorkLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CompanyName"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/WorkLocationImg"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Location"
+                android:textColor="@color/darkGreen"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/salaryImg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/WorkLocationImg"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/salary"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/salary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/WorkLocation"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/salaryImg"
+                android:fontFamily="@font/poppins_medium"
+                android:text="10k"
+                android:textColor="@color/darkGreen"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/periodMonthsImg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/WorkLocation"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@id/salary"
+                android:background="@drawable/period"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/periodMonths"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/WorkLocation"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/periodMonthsImg"
+                android:fontFamily="@font/poppins_medium"
+                android:text="6 Months"
+                android:textColor="@color/darkGreen"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/timeFullPartImg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/salaryImg"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/time"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/timeFullPart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/salary"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/timeFullPartImg"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Part Time"
+                android:textColor="@color/darkGreen"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/JobOrIntern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/timeFullPartImg"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/job_or_intern_shape"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="8dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="2dp"
+                android:text="Internship"
+                android:textColor="#595959"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relateLongDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relateShortDes">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#EAE8E8" />
+
+            <TextView
+                android:id="@+id/AboutCompTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="About"
+                android:textColor="@color/darkGreen"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/CompWebsite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/AboutCompTitle"
+                android:textColor="@color/green"
+                android:text="Website"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/WebsiteGo"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_below="@id/AboutCompTitle"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="10dp"
+                android:padding="1dp"
+                android:layout_toEndOf="@id/CompWebsite"
+                android:src="@drawable/websitego" />
+
+            <TextView
+                android:id="@+id/AboutCompDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CompWebsite"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="About We Hire"
+                android:textColor="@color/darkGreen"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relateAboutIntern"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relateLongDes">
+
+
+            <TextView
+                android:id="@+id/AboutTheIntern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="About The Internship"
+                android:textColor="@color/darkGreen"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/InternRoleTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/AboutTheIntern"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Selected intern's day-to-day responsibilities \ninclude:"
+                android:textColor="@color/darkGrey"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/internRoleDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/InternRoleTitle"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="About the internship roles and responsibilities in details"
+                android:textColor="@color/darkGreen"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relateSkills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relateAboutIntern">
+
+            <TextView
+                android:id="@+id/Skills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Skills required"
+                android:textColor="@color/darkGreen"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/skillReq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Skills"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Skills Required for this internship"
+                android:textColor="@color/darkGreen"
+                android:textSize="12sp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relatePerks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relateSkills">
+
+            <TextView
+                android:id="@+id/Perks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkGreen"
+                android:text="Perks"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycPerks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Perks"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relateOpenings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relatePerks">
+
+            <TextView
+                android:id="@+id/openNumberTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkGreen"
+                android:text="Number of openings"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/openNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/openNumberTitle"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="2"
+                android:textColor="@color/darkGrey"
+                android:textSize="15sp" />
+
+
+
+        </RelativeLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ApplyBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relateOpenings"
+            android:layout_margin="20dp"
+            android:text="Apply"
+            android:textAllCaps="false"/>
+
+        <RelativeLayout
+            android:id="@+id/relateFraud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fraud_shape"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/ApplyBtn">
+
+            <ImageView
+                android:id="@+id/fraudImg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/report"
+                android:backgroundTint="#706400"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/fraudTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="18dp"
+                android:layout_toEndOf="@id/fraudImg"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Save yourself from fraud!"
+                android:textColor="#706400"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/fraudDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fraudTitle"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="54dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="if an employer asks you to pay any security deposit, registration fee, laptop fee, etc., do not pay and notify us immediatly.Remember, We Hire doesn't charge a fee from students to apply to a job or an internship &amp; we don't allow other companies to do so either."
+                android:textColor="#706400"
+                android:textSize="12sp" />
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

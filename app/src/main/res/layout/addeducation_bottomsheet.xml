@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:background="@drawable/bottom_sheet_round">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey" />
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/close"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/view1"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/graduateTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Status"
+        android:textColor="@color/darkGrey"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/statusSpin"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:hintTextColor="@color/darkGreen"
+        app:boxStrokeColor="@color/darkGreen"
+        android:hint="Select Status"
+        android:layout_below="@id/graduateTxt">
+
+        <AutoCompleteTextView
+            android:id="@+id/statusList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/collegeName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        app:hintTextColor="@color/darkGreen"
+        app:boxStrokeColor="@color/darkGreen"
+        android:layout_below="@id/statusSpin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/collegeNameEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/darkGreen"
+            android:hint="College"
+            android:textColor="@color/darkGreen"
+            android:imeOptions="actionNext"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/collegeName">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/startYearSpin"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            app:hintTextColor="@color/darkGreen"
+            app:boxStrokeColor="@color/darkGreen"
+            android:hint="Start Year">
+
+            <AutoCompleteTextView
+                android:id="@+id/startYearList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/endYearSpin"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            app:hintTextColor="@color/darkGreen"
+            app:boxStrokeColor="@color/darkGreen"
+            android:hint="End Year">
+
+            <AutoCompleteTextView
+                android:id="@+id/endYearList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/DegreeName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        app:hintTextColor="@color/darkGreen"
+        app:boxStrokeColor="@color/darkGreen"
+        android:layout_below="@id/line1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/DegreeEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/darkGreen"
+            android:hint="Degree"
+            android:textColor="@color/darkGreen"
+            android:imeOptions="actionNext"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/streamName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        app:hintTextColor="@color/darkGreen"
+        app:boxStrokeColor="@color/darkGreen"
+        android:layout_below="@id/DegreeName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/streamEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/darkGreen"
+            android:hint="Stream"
+            android:textColor="@color/darkGreen"
+            android:imeOptions="actionNext"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/streamName">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/performanceUnit"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:hintTextColor="@color/darkGreen"
+            app:boxStrokeColor="@color/darkGreen"
+            android:hint="Performance Scale">
+
+            <AutoCompleteTextView
+                android:id="@+id/unitList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/performance"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:hintTextColor="@color/darkGreen"
+            app:boxStrokeColor="@color/darkGreen"
+            android:layout_weight="1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/performannceEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/darkGreen"
+                android:hint="Performance"
+                android:textColor="@color/darkGreen"
+                android:imeOptions="actionNext"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2"
+        android:text="Save"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        app:backgroundTint="@color/darkGreen" />
+
+</RelativeLayout>

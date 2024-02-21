@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".User.fragments.ProfileEditFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottm"
+        android:layout_alignParentTop="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/wehire_logo"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/grey"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/MyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_image"
+                    android:text="Hii User,"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/darkGreen"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/MyName"
+                    android:text="Let's build you an awesome profile that \nyou will need to apply"
+                    android:textSize="12sp"
+                    android:layout_marginTop="0dp"
+                    android:textColor="@color/grey"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_centerHorizontal="true"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/FirstName"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/des">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/FirstNameEdt"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:backgroundTint="@color/darkGreen"
+                        android:hint="First Name"
+                        android:textColor="@color/darkGreen"
+                        android:imeOptions="actionNext"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/LastName"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/FirstName">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/LastNameEdt"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:backgroundTint="@color/darkGreen"
+                        android:hint="Last Name"
+                        android:textColor="@color/darkGreen"
+                        android:imeOptions="actionNext"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Mobile"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/LastName">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/MobileEdt"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:backgroundTint="@color/darkGreen"
+                        android:hint="Mobile"
+                        android:textColor="@color/darkGreen"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Location"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/Mobile">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/LocationEdt"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:backgroundTint="@color/darkGreen"
+                        android:hint="Current Location"
+                        android:textColor="@color/darkGreen"
+                        android:imeOptions="actionNext"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/LocationDes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Location"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingStart="20dp"
+                    android:text="Please enter the location where you currently live"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/NextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Save"
+            app:backgroundTint="@color/darkGreen"
+            android:textAllCaps="false" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.fragments.PreferenceFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/prefHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/preferencehead"
+            android:textColor="#515151"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/radioRelate"
+            android:layout_below="@id/prefHead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/currntlyLooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/darkGrey"
+                android:textSize="14sp"
+                android:text="CURRENTLY LOOKING FOR" />
+
+            <RadioGroup
+                android:layout_below="@id/currntlyLooking"
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/internRad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  Internships"
+                    android:textColor="@color/darkGreen"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:buttonTint="@color/green"/>
+
+                <RadioButton
+                    android:id="@+id/jobRad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  Jobs"
+                    android:textColor="@color/darkGreen"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:buttonTint="@color/green"/>
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/checkRelate"
+            android:layout_below="@id/radioRelate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/typeOfIntern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/darkGrey"
+                android:textSize="14sp"
+                android:text="CURRENTLY LOOKING FOR" />
+
+            <CheckBox
+                android:id="@+id/workHomeCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/green"
+                android:layout_below="@id/typeOfIntern"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:id="@+id/intern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/typeOfIntern"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/workHomeCheck"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Work from home"
+                android:textColor="@color/darkGreen"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/inOfficeCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:buttonTint="@color/green"
+                android:layout_below="@id/workHomeCheck" />
+
+            <TextView
+                android:id="@+id/inoffice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/workHomeCheck"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/inOfficeCheck"
+                android:fontFamily="@font/poppins_regular"
+                android:text="In Office"
+                android:textColor="@color/darkGreen"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/close" />
+
+    <TextView
+        android:id="@+id/compFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Company Name"
+        android:textColor="@color/darkGreen"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/companyEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/compFullName"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="username@gmail.com"
+        android:textColor="@color/darkGrey"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/verifiedImg"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="53dp"
+        android:layout_toEndOf="@id/compFullName"
+        android:src="@drawable/verified" />
+
+    <LinearLayout
+        android:id="@+id/LinearHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/companyEmail"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/preferenceImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="6dp"
+                android:src="@drawable/preferences"/>
+            <TextView
+                android:id="@+id/preference"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/compFullName"
+                android:textColor="@color/darkGreen"
+                android:text="Preferences"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_medium"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/trainingCampImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="6dp"
+                android:src="@drawable/resume"/>
+            <TextView
+                android:id="@+id/trainingCamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/compFullName"
+                android:textColor="@color/darkGreen"
+                android:text="Training camp"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_medium"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/myPostsImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/applications"/>
+            <TextView
+                android:id="@+id/myPosts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/compFullName"
+                android:textColor="@color/darkGreen"
+                android:text="My Posts"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_medium"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/LinearHeader" />
+
+
+
+
+
+</RelativeLayout>

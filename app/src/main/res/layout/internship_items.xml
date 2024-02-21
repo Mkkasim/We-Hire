@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EFEFEF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/CourseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Course Name"
+            android:textColor="@color/darkGreen"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/CompanyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CourseName"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Company Name"
+            android:textColor="@color/darkGrey"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/CompanyImg"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/WorkLocationImg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/CompanyName"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/location"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/WorkLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CompanyName"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/WorkLocationImg"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Location"
+            android:textColor="@color/darkGreen"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/salaryImg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/WorkLocationImg"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/salary"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/WorkLocation"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/salaryImg"
+            android:fontFamily="@font/poppins_medium"
+            android:text="10k"
+            android:textColor="@color/darkGreen"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/periodMonthsImg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/WorkLocation"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@id/salary"
+            android:background="@drawable/period"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/periodMonths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/WorkLocation"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/periodMonthsImg"
+            android:fontFamily="@font/poppins_medium"
+            android:text="6 Months"
+            android:textColor="@color/darkGreen"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/timeFullPartImg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/salaryImg"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/time"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/timeFullPart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/salary"
+            android:layout_toEndOf="@id/timeFullPartImg"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Part Time"
+            android:textColor="@color/darkGreen"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/JobOrIntern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timeFullPartImg"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/job_or_intern_shape"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="8dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="2dp"
+            android:text="Internship"
+            android:textColor="#595959"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

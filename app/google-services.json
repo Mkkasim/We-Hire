@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1016356174240",
+    "firebase_url": "https://wehire-75c64-default-rtdb.firebaseio.com",
+    "project_id": "wehire-75c64",
+    "storage_bucket": "wehire-75c64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016356174240:android:6ec821108ee889fecb8cc5",
+        "android_client_info": {
+          "package_name": "com.mk.wehire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016356174240-nae6dhdjraua858s7u0j5g72k5k6mi6q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mk.wehire",
+            "certificate_hash": "3337b100024c09f20d2a8ed7042d461fec1d7729"
+          }
+        },
+        {
+          "client_id": "1016356174240-lr1fn28gk4hnejk7ss18fbtk0n374ac2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2lnDMi3wrXp4FFhCKVsLWf27kflkeoH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1016356174240-lr1fn28gk4hnejk7ss18fbtk0n374ac2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,57 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.WeHire" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/darkGreen</item>
+        <item name="colorPrimaryVariant">@color/darkGreen</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/grey</item>
+        <item name="colorSecondaryVariant">@color/grey</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <!-- Customize your theme here. -->
+        <!-- for white statusbar-->
+         <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <style name="SlidingDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="line">
+        <item name="android:background">@color/grey</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <style name="BottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/bottomSheetStyleWrapper</item>
+    </style>
+
+    <style name="bottomSheetStyleWrapper" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <color name="green">#25CE9E</color>
+    <color name="litegreen">#9DE1CE</color>
+    <color name="darkGreen">#1C3E58</color>
+    <color name="liteDarkGreen">#6C95B5</color>
+    <color name="grey">#C4C4C4</color>
+    <color name="darkGrey">#8E8E8E</color>
+    <color name="liteGrey">#EFEFEF</color>
+    <color name="brown">#B68946</color>
+
+    <color name="shimmer_color">#DAF8EF</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+</resources>

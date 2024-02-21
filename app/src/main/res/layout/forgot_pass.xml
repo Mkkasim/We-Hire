@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/resetTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset Password ?"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/darkGreen"/>
+
+    <TextView
+        android:id="@+id/resetMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resetTitle"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Enter your email to receive reset link."
+        android:textColor="@color/darkGreen"
+        android:textSize="16sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EmailId"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resetMessage"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EmailIdEdt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/darkGreen"
+            android:hint="Email ID"
+            android:textColor="@color/darkGreen"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/yesBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EmailId"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Yes"
+        android:textColor="@color/darkGreen"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/noBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EmailId"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:layout_toStartOf="@id/yesBtn"
+        android:fontFamily="@font/poppins_medium"
+        android:text="No"
+        android:textColor="@color/darkGreen"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

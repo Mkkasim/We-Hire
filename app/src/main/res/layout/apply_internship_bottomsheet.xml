@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey" />
+
+    <TextView
+        android:id="@+id/textHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Applying Form"
+        android:textColor="@color/darkGreen"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textHead"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="You have to fill form in order to applying to this internship. Otherwise you wont be eligible for shortlisting."
+        android:textColor="@color/darkGreen"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/applyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textMsg"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/apply_btn_shape"
+        android:fontFamily="@font/poppins_regular"
+        android:paddingStart="15dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="2dp"
+        android:text=" Apply "
+        android:textColor="@color/green"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.fragments.ApplicationsFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relate1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fraud_shape"
+            android:padding="10dp"
+            android:layout_margin="20dp">
+
+            <ImageView
+                android:id="@+id/reportImg"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/report"
+                android:backgroundTint="@color/brown" />
+
+            <TextView
+                android:id="@+id/facingIssueHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/drop_down"
+                android:layout_toRightOf="@id/drop_up"
+                android:layout_toEndOf="@id/reportImg"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/facingissue"
+                android:textColor="@color/brown"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/drop_down"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/drop_down"
+                android:backgroundTint="@color/brown" />
+
+            <ImageView
+                android:id="@+id/drop_up"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:visibility="gone"
+                android:background="@drawable/drop_up"
+                android:backgroundTint="@color/brown" />
+
+            <RelativeLayout
+                android:id="@+id/relateFacingIssue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_below="@id/facingIssueHead">
+
+                <TextView
+                    android:id="@+id/facingDes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/facing_des"
+                    android:textColor="@color/brown"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/reportCom"
+                    android:layout_below="@id/facingDes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#684E26"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Report complaint" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycApplications"
+            android:layout_below="@id/relate1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            tools:listitem="@layout/application_items"/>
+
+        <RelativeLayout
+            android:id="@+id/relateImg"
+            android:layout_below="@id/relate1"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/illustration_application"/>
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/noApplications"
+                android:textAlignment="center"
+                android:textColor="@color/darkGreen"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
